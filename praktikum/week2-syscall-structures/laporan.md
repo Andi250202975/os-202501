@@ -24,10 +24,13 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1. Buka terminal pada sistem operasi (misalnya Linux).
+2. Buat file program baru dengan teks editor.
+3. Tulis kode sederhana yang menggunakan system call (contohnya menampilkan teks atau membaca file).
+4. Simpan dan kompilasi program menggunakan gcc atau compiler lain.
+5. Jalankan program untuk melihat interaksi dengan sistem operasi.
+6. Uji program beberapa kali agar hasil sesuai harapan
+7. Simpan perubahan ke Git dengan pesan commit yang jelas.
 
 ---
 
@@ -46,12 +49,13 @@ Sertakan screenshot hasil percobaan atau diagram:
 ![alt text](screenshots/screenshotssyscall_ls.png)
 ![alt text](screenshots/screenshotssyscall2_ls.png)
 ![alt text](screenshots/screenshotssyscall3_ls.png)
+![alt text](screenshots/)
 
 
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
+- Jelaskan makna hasil percobaan.
 - Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
 - Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
 
