@@ -14,12 +14,25 @@ Topik: syscall-structures
 ## Tujuan
 Tuliskan tujuan praktikum minggu ini.  
 Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+> Tujuan dari praktikum untuk mempelajari mekanisme system call dan struktur sistem operasi adalah untuk memahami bagaimana sebuah program dapat berkomunikasi dengan kernel dan perangkat keras. Dengan memahami konsep ini, kita dapat mengetahui alur kerja sistem dari saat perintah dijalankan hingga perangkat keras meresponsnya. Pengetahuan ini sangat penting karena system call menjadi jembatan antara ruang pengguna (user space) dan ruang kernel (kernel space), sehingga proses eksekusi dapat berjalan dengan aman dan terkontrol. 
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1. Pemisahan antara User Space dan Kernel Space
+Dalam sistem operasi modern, terdapat dua ruang utama, yaitu user space dan kernel space. User space adalah tempat program atau aplikasi dijalankan oleh pengguna, sedangkan kernel space merupakan area khusus yang digunakan oleh kernel untuk mengelola seluruh sumber daya sistem. Pemisahan ini bertujuan untuk menjaga keamanan dan stabilitas sistem, sehingga aplikasi tidak dapat langsung mengakses perangkat keras atau sumber daya penting tanpa melalui mekanisme resmi.
+
+2. Peran System Call sebagai Jembatan Komunikasi
+System call berfungsi sebagai pintu gerbang yang menghubungkan user space dengan kernel space. Ketika program ingin melakukan operasi penting seperti membaca file, mengirim data, atau mengakses perangkat keras, ia tidak melakukannya secara langsung, tetapi melalui system call. Dengan cara ini, sistem operasi dapat mengontrol setiap permintaan yang masuk sehingga tidak merusak sistem dan dapat dijalankan dengan aman.
+
+3. Struktur Sistem Operasi yang Berlapis
+Sistem operasi memiliki struktur berlapis yang terdiri dari kernel, file system, device driver, dan user interface. Kernel menjadi inti yang mengatur semua proses dan sumber daya. File system mengatur penyimpanan data, sedangkan device driver menerjemahkan perintah kernel ke dalam bahasa yang dapat dipahami perangkat keras. Lapisan terluar adalah user interface, yang memungkinkan pengguna berinteraksi dengan sistem melalui perintah teks atau tampilan grafis.
+
+5. Pengelolaan Sumber Daya Secara Terpusat
+Salah satu fungsi utama sistem operasi adalah mengatur dan membagi sumber daya seperti CPU, memori, penyimpanan, dan perangkat input/output. Dengan adanya mekanisme system call, pengelolaan ini dapat dilakukan secara terpusat dan efisien. Hal ini memastikan bahwa setiap proses mendapat giliran yang adil dan tidak terjadi konflik dalam penggunaan sumber daya.
+
+5. Landasan Keamanan dan Stabilitas Sistem
+Mekanisme system call dan struktur sistem operasi dirancang untuk menjaga keamanan serta mencegah kerusakan sistem. Karena semua akses terhadap sumber daya penting harus melalui kernel, maka sistem dapat memfilter, mengatur izin, serta mencegah tindakan yang berbahaya. Inilah yang menjadikan sistem operasi mampu berjalan secara stabil meskipun digunakan oleh banyak program secara bersamaan.
 
 ---
 
